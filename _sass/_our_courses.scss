@@ -1,0 +1,30 @@
+.courses-offered{
+  padding-top: 13vh;
+  padding-bottom: 5vh;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  text-align: center;
+
+
+  // .shadow{
+  //   box-shadow: 4px 4px 20px #888888;
+  //   padding-top: 2px;
+  //   padding-bottom: 20px;
+  //   margin: 0px;
+  //   margin-left: 2vw;
+  //   margin-top: 3vw;
+  // }
+  .course-tile{
+    text-align: center;
+    border: 2px solid $darker-light-color;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .tile-heading{
+      border-bottom: 2px solid $darker-light-color;
+
+    }
+    .tile-content{
+
+    }
+  }
+}

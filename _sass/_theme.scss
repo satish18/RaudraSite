@@ -1,0 +1,16 @@
+$primary-color: #009688;
+$lighter-primary-color: lighten($primary-color, 5%);
+$dark-color: #222;
+$light-color: #ffffff;
+$darker-light-color: #ccc;
+$lighter-dark-color: lighten($dark-color, 5%);
+$dark-font-color: lighten($dark-color, 20%);
+$navbar-translucent-bg-color: rgba(0, 0, 0, 0.5);
+$navbar-translucent-light-color: rgba(255, 255, 255, 0.3);
+$shadow-color: $navbar-translucent-bg-color;
+
+$font-family: 'Raleway', sans-serif;
+$very-thin-font-weight: 100;
+$thin-font-weight: 200;
+$normal-font-weight: 400;
+$bold-font-weight: 600;

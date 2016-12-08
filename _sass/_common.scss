@@ -1,0 +1,213 @@
+$navbar-height: 92px;
+
+html, body {
+  color: $dark-font-color;
+  background-color: $light-color;
+}
+
+* {
+  font-family: $font-family;
+}
+
+header {
+  box-shadow: 0 10px 20px $shadow-color;
+
+  nav#topnav {
+    background-color: $dark-color;
+    height: auto;
+    overflow: hidden;
+    visibility: visible;
+    @include animate(height, 0.5s);
+
+    a {
+      font-size: 1.3rem;
+      line-height: 3em;
+      color: $light-color;
+      display: inline-block;
+
+      &:hover, &:focus, &:active {
+        text-decoration: none;
+      }
+    }
+
+    .social-icons {
+      a {
+        padding: 0 1em;
+        border-left: 1px solid $navbar-translucent-light-color;
+
+        &:last-child {
+          border-right: 1px solid $navbar-translucent-light-color;
+        }
+      }
+    }
+  }
+
+  nav.navbar {
+    background-color: $lighter-dark-color;
+    border-radius: 0;
+    border-bottom: none;
+    margin-bottom: 0;
+    border-color: transparent;
+    @include animate(all, 0.5s);
+
+    a.navbar-brand img {
+      height: 25px;
+      display: inline-block;
+    }
+
+    a.navbar-brand, .navbar-nav > li > a {
+      color: $light-color;
+      @include animate(color);
+
+      &:hover {
+        color: mix($dark-color, $light-color, 30%);
+      }
+    }
+  }
+}
+
+#main-content {
+  & > .container,
+  & > .container-fluid,
+  #program > .container {
+    // This is required as the navbar is fixed-top
+    margin-top: $navbar-height;
+    background-color: $light-color;
+    min-height: 100vh;
+    padding-bottom: 3rem;
+  }
+}
+footer {
+  background-image: url("../images/footer-bg.jpg");
+  background-size: auto 100%;
+  background-color: rgb(15, 26, 30);
+  color: white;
+  text-align: center;
+  font-size: 0.9em;
+  font-weight: $very-thin-font-weight;
+  padding: 4em 0;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  nav {
+      a {
+        color: white;
+        margin: 0 1em;
+        @include animate(color);
+
+        &:hover {
+          color: $primary-color;
+          text-decoration: none;
+        }
+      }
+  }
+
+  p {
+    margin: 1.5em 0 1em;
+    font-size: 1em;
+  }
+}
+
+
+// footer {
+//   color: $light-color;
+//   text-align: center;
+//   font-size: 0.9em;
+//   font-weight: $very-thin-font-weight;
+//   padding: 8em 0;
+//   background: $dark-color url('../images/footer-bg.jpg');
+//   background-position: right;
+//   background-repeat: no-repeat;
+//   background-size: auto 100%;
+//
+//   nav {
+//     a {
+//       color: $light-color;
+//       margin: 0 1em;
+//       @include animate(color);
+//
+//       &:hover {
+//         color: $primary-color;
+//         text-decoration: none;
+//       }
+//     }
+//   }
+//
+//   p {
+//     margin: 1.5em 0 1em;
+//     font-size: 1em;
+//   }
+// }
+
+.slide {
+  height: 100vh;
+}
+
+.vcenter {
+  border: 1px solid transparent;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+@keyframes spin {
+  100% {
+    transform:rotate(360deg);
+  }
+}
+
+@for $i from 1 through 6 {
+  h#{$i} {
+    font-weight: $very-thin-font-weight;
+  }
+}
+
+h1 {
+  font-size: 6rem;
+  color: $dark-font-color;
+}
+
+h2 {
+  font-size: 4rem;
+  color: $primary-color;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+p, li {
+  font-size: 1.6rem;
+  line-height: 1.5em;
+}
+
+b, strong {
+  font-weight: $bold-font-weight;
+}
+
+.btn {
+  border-radius: 2px;
+
+  &.btn-outline {
+    &, &:hover {
+      color: $dark-font-color;
+      border: 1px solid $dark-font-color;
+      background-color: transparent;
+      @include animate(background-color, 0.3s);
+    }
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    &.btn-outline-inverse {
+      color: $light-color;
+      border-color: $light-color;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+    }
+  }
+}

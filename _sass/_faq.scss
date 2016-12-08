@@ -1,0 +1,34 @@
+#faq {
+  padding-top: 13vh;
+  text-align: center;
+  .faq-slide-container {
+    background: #315562;
+    i {
+      font-size: 30px;
+      color: white;
+    }
+    h2 {
+      color: white;
+      text-align: center;
+      text-shadow: 1px 1px white;
+    }
+  }
+  .faq-content{
+    background-color: #F5F5F5;
+    padding: 5px;
+    margin: 10px;
+    border: 0px solid #315562;
+    border-radius: 50px;
+    h4 {
+      padding-left: 50px;
+      padding-right: 50px;
+      text-align: left;
+      color: #315562;
+    }
+    p{
+      padding-left: 50px;
+      padding-right: 50px;
+      text-align: justify;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+#about-ravindra {
+  padding-top: 13vh;
+  text-align: center;
+  .about-slide-container {
+    background: #315562;
+    i {
+      font-size: 30px;
+      color: white;
+    }
+    h2 {
+      color: white;
+      text-align: center;
+      text-shadow: 1px 1px white;
+    }
+    p{
+      color: white;
+      font-style: italic;
+    }
+  }
+  .about-content {
+    padding: 20px;
+    background: #F4F4F4;
+    img {
+      // width: 0%;
+      height: 10%;
+    }
+    p{
+      text-align: justify;
+      padding: 1em;
+      color: #315562;
+    }
+  }
+}

@@ -1,0 +1,3 @@
+@mixin animate($property: all, $time: 0.3s, $effect: ease-in) {
+  transition: $property $time $effect;
+}
